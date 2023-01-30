@@ -3,6 +3,8 @@ const Employee = require("./library/Employee")
 const Manager = require("./library/Manager")
 const Intern = require("./library/Intern")
 const inquirer = require("inquirer")
+const renderHTML = require("./src/renderhtml")
+const fs = require("fs")
 //const Kevin = new Engineer ("Kevin", 1, "karguello90@gmail.com", "karguello90")
 //console.log(Kevin)
 const teamArray = []
@@ -118,6 +120,7 @@ function newMember() {
         }
         else {
             console.log("team created")
+            fs.writeFileSync("./dist/index.html",renderHTML(teamArray))
         }
     })
 }
