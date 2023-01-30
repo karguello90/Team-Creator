@@ -33,6 +33,7 @@ function promptManager() {
         const instance = new Manager(data.managerName, data.managerID, data.managerEmail, data.managerOfficeNumber)
         teamArray.push(instance)
         console.log(teamArray)
+        newMember()
     })
 }
     promptManager()
@@ -63,9 +64,9 @@ function promptEngineer() {
         const instance = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGitHub)
         teamArray.push(instance)
         console.log(teamArray)
+        newMember()
     })
 }
-    promptEngineer()
 
 function promptIntern() {
     inquirer.prompt([
@@ -93,10 +94,33 @@ function promptIntern() {
         const instance = new Intern(data.internName, data.internID, data.internEmail, data.internSchool)
         teamArray.push(instance)
         console.log(teamArray)
+        newMember()
     })
 }
-    promptIntern()
 
+function newMember() {
+    inquirer.prompt([
+        {
+        type: "list", 
+        name: "newMember",
+        message: "what kind of employee would you like to add?",
+        choices: ["Manager", "Engineer", "Intern", "none"]
+        }
+    ]) .then (data => {
+        if (data.newMember === "Manager") {
+            promptManager()
+        } 
+        else if(data.newMember === "Engineer") {
+            promptEngineer()
+        }
+        else if(data.newMember === "Intern") {
+            promptIntern()
+        }
+        else {
+            console.log("team created")
+        }
+    })
+}
 // function promptEmployee() {
 //     inquirer.prompt([
 //         {
