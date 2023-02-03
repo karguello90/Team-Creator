@@ -16,7 +16,7 @@ The Team Creator is an application that allows the user to generate a profile fo
 To install the application, the user will download the Team Creator repo to the their local storage, install and run using node index.js
 
 ## Usage:
-To be determined.
+Program is run through input of the Node Index.JS command at the terminal. The program will prompt which team roles and information about each role that will need to can be included. After input, the program will generate a webpage displaying the profile of each team member.
 
 ## License:
 MIT
