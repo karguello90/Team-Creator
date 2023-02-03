@@ -3,47 +3,42 @@ function renderCards(teamArray) {
 
 function managerCard(employee) {
     return `
-    <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">${employee.getRole()}</h5>
-    <p class="card-text">${employee.getName()}</p>
-    <p class="card-text">${employee.getID()}</p>
-    <p class="card-text">${employee.getOfficeNumber()}</p>
-    <a href="#" class="btn btn-primary">email: ${employee.getEmail()}</a>
-  </div>
-</div> `
+    <div class="card" style="width: 20rem; height: 25rem;">
+      <div class="card-body">
+        <h5 class="card-title">${employee.getRole()}</h5>
+        <p class="card-text">${employee.getName()}</p>
+        <p class="card-text">ID#: ${employee.getID()}</p>
+        <p class="card-text">&#9742;: ${employee.getOfficeNumber()}</p>
+        <a href="#" class="btn btn-primary">&#9993;: ${employee.getEmail()}</a>
+      </div>
+    </div> `
 }
 
 function engineerCard(employee) {
     return `
-    <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">${employee.getRole()}</h5>
-    <p class="card-text">${employee.getName()}</p>
-    <p class="card-text">${employee.getID()}</p>
-    <p class="card-text">${employee.getGithub()}</p>
-    <a href="#" class="btn btn-primary">email: ${employee.getEmail()}</a>
-  </div>
-</div> `
+    <div class="card" style="width: 20rem; height: 25rem;">
+      <div class="card-body">
+        <h5 class="card-title">${employee.getRole()}</h5>
+        <p class="card-text">${employee.getName()}</p>
+        <p class="card-text">ID#: ${employee.getID()}</p>
+        <p class="card-text">GitHub: ${employee.getGithub()}</p>
+        <a href="#" class="btn btn-primary">&#9993;: ${employee.getEmail()}</a>
+      </div>
+    </div> `
 }
     
 function internCard(employee) {
     return `
-    <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">${employee.getRole()}</h5>
-    <p class="card-text">${employee.getName()}</p>
-    <p class="card-text">${employee.getID()}</p>
-    <p class="card-text">${employee.getSchool()}</p>
-    <a href="#" class="btn btn-primary">email: ${employee.getEmail()}</a>
-  </div>
-</div> `
+    <div class="card" style="width: 20rem; height: 25rem;">
+      <div class="card-body">
+        <h5 class="card-title">${employee.getRole()}</h5>
+        <p class="card-text">${employee.getName()}</p>
+        <p class="card-text">ID#: ${employee.getID()}</p>
+        <p class="card-text">School: ${employee.getSchool()}</p>
+        <a href="#" class="btn btn-primary">&#9993;: ${employee.getEmail()}</a>
+      </div>
+    </div> `
 }
-
-
-
-
-
 
 teamArray.forEach(instance => {
     if (instance.getRole() === "Manager") {
@@ -56,11 +51,8 @@ teamArray.forEach(instance => {
         convertCards.push(internCard(instance))
     }
 });
-
-
     return convertCards.join("")
 }
-
 
 module.exports = teamArray => {
     return `
@@ -68,25 +60,23 @@ module.exports = teamArray => {
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <title>Team Generator</title>
 </head>
 
-
 <header>
-  
+  <h1>Team Profiles<h1>
 </header>
-
 
 <body>
 <main>
-${renderCards(teamArray)}
+  <div class ="main-container">
+    ${renderCards(teamArray)}
+  </div>
 </main>
-
-    </body>
+</body>
 
 </html>
-    
-    
     `
 }
