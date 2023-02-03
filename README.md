@@ -18,7 +18,9 @@ To install the application, the user will download the Team Creator repo to the 
 ## Usage:
 Program is run through input of the Node Index.JS command at the terminal. The program will prompt which team roles and information about each role that will need to can be included. After input, the program will generate a webpage displaying the profile of each team member.
 
-The following video contains a demonstration of the program commands and flow: 
+The following video contains a demonstration of the program commands and flow.
+
+Please click the image below to see video: 
 
 [![Watch the video](https://i.ibb.co/qJSd4Yg/Team-Creator-Example.png")](https://www.loom.com/share/c26e71617a2c401999ab65fc2328c941)
 
