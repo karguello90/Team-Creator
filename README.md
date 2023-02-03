@@ -20,7 +20,7 @@ Program is run through input of the Node Index.JS command at the terminal. The p
 
 The following video contains a demonstration of the program commands and flow: 
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/c26e71617a2c401999ab65fc2328c941" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[![Watch the video](https://i.ibb.co/qJSd4Yg/Team-Creator-Example.png")](https://www.loom.com/share/c26e71617a2c401999ab65fc2328c941)
 
 ## License:
 MIT

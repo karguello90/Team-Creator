@@ -62,7 +62,7 @@ module.exports = teamArray => {
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <title>Team Generator</title>
+    <title>Team Creator</title>
 </head>
 
 <header>
