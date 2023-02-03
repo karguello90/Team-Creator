@@ -66,7 +66,7 @@ module.exports = teamArray => {
 </head>
 
 <header>
-  <h1>Team Profiles<h1>
+  <h1>Team Profiles</h1>
 </header>
 
 <body>
