@@ -3,7 +3,7 @@ function renderCards(teamArray) {
 
 function managerCard(employee) {
     return `
-    <div class="card" style="width: 20rem; height: 25rem;">
+    <div class="card" style="width: 24rem; height: 25rem;">
       <div class="card-body">
         <h5 class="card-title">${employee.getRole()}</h5>
         <p class="card-text">${employee.getName()}</p>
@@ -16,12 +16,12 @@ function managerCard(employee) {
 
 function engineerCard(employee) {
     return `
-    <div class="card" style="width: 20rem; height: 25rem;">
+    <div class="card" style="width: 24rem; height: 25rem;">
       <div class="card-body">
         <h5 class="card-title">${employee.getRole()}</h5>
         <p class="card-text">${employee.getName()}</p>
         <p class="card-text">ID#: ${employee.getID()}</p>
-        <p class="card-text">GitHub: ${employee.getGithub()}</p>
+        <p class="card-text">GitHub&#128187: ${employee.getGithub()}</p>
         <a href="#" class="btn btn-primary">&#9993;: ${employee.getEmail()}</a>
       </div>
     </div> `
@@ -29,7 +29,7 @@ function engineerCard(employee) {
     
 function internCard(employee) {
     return `
-    <div class="card" style="width: 20rem; height: 25rem;">
+    <div class="card" style="width: 24rem; height: 25rem;">
       <div class="card-body">
         <h5 class="card-title">${employee.getRole()}</h5>
         <p class="card-text">${employee.getName()}</p>
